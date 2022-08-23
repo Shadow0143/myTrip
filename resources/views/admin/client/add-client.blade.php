@@ -1,0 +1,80 @@
+@extends('admin.layouts.app')
+
+@section('content')
+
+
+<div class="content-wrapper">
+
+<section>
+    <div class="container-fluid">
+
+
+        <div class="addbanner015 adsec01">
+
+            <h2>Add Sections</h2>
+
+            <div class="card">
+<form method ="POST" action="/admin/post-client" enctype="multipart/form-data">
+    {{ csrf_field() }}
+                <div class="form_holder045">
+
+                    <div class="addsec45">Client</div>
+
+                    <div class="field_col06">
+                        <label>Company Name</label>
+                        <input type="text" name="name" placeholder="Name" class="form-control">
+                        <span class="error01">Enter Title Here</span>
+                    </div>
+
+                    
+                    <div class="field_col06">
+                        <label>Client Image</label>
+                        <div class="uploadfiledes">
+                            <small>Upload Image</small>
+
+                            <input type="file" name="image" class="form-control">
+                        </div>
+                        <span class="error01">Enter Title Here</span>
+                    </div>
+                   
+					<div class="field_col06">
+                        <label>Sequence</label>
+                        <input type="number" name="sequence" placeholder="Sequence" class="form-control">
+                        <span class="error01">Enter Title Here</span>
+                    </div>
+					 
+
+<div class="btmsubmit46"><button type="submit" class="form-control btn dflt_btn">Submit</button></div>
+
+                </div>
+
+</form>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+@endsection
+
+@section('js')
+
+@endsection
+

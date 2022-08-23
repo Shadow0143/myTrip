@@ -1,0 +1,93 @@
+@extends('admin.layouts.app')
+
+@section('content')
+
+
+<div class="content-wrapper">
+
+<section>
+    <div class="container-fluid">
+
+
+        <div class="addbanner015 adsec01">
+
+            <h2>Edit</h2>
+
+            <div class="card">
+<form method ="POST" action="/admin/update-client" enctype="multipart/form-data">
+    {{ csrf_field() }}
+    <input type="hidden" name="id" value="{{ $editdata->id }}">
+                <div class="form_holder045">
+
+                    <div class="addsec45">Clients</div>
+
+                    <div class="field_col06">
+                        <label>Company Name</label>
+                        <input type="text" name="name" value="{{ $editdata->name }}" class="form-control">
+                        <span class="error01">Enter Title Here</span>
+                    </div>
+
+                   
+                    <div class="field_col06">
+                        <label> Image</label>
+                        <div class="uploadfiledes">
+                            <small>Upload Image</small>
+
+                            <input type="file" name="image" value="{{ $editdata->image }}" class="form-control">
+                            <img src="{{URL::to('/')}}/clientimage/{{ $editdata->image }}" >
+                        </div>
+                        <span class="error01">Enter Title Here</span>
+                    </div>
+                   <div class="field_col06">
+                        <label>Sequence</label>
+                        <input type="number" name="sequence" value="{{ $editdata->sequence }}" class="form-control">
+                        <span class="error01">Enter Title Here</span>
+                    </div>
+
+
+
+<div class="btmsubmit46"><button type="submit" class="form-control btn dflt_btn">Submit</button></div>
+
+                </div>
+
+</form>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+@endsection
+
+@section('js')
+
+@endsection
+
+@push('scripts')
+
+<script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.ckeditor').ckeditor();
+    });
+</script>
+</html>
+
+@endpush
