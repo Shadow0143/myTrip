@@ -57,6 +57,7 @@
         </button>
     </div>
 </div> --}}
+
 <section class="slider-wrapper p-0 homebaner01">
     <div id="slider-style-one" class="carousel slide bs-slider control-round indicators-line" data-ride="carousel"
         data-pause="hover" data-interval="5000">
@@ -553,6 +554,57 @@
         </div>
     </div>
 </section> --}}
+
+<section class="special-packages-sec pt-75 pb-80 why-choose"> 
+ 
+        <div class="container text-center">
+            <h2 class="titleall mb-5">why choose US</h2>
+            <div class="row my-4 pt-5">
+                <div class="col-md-3 mb-sm-0 mb-3 d-flex">
+                    <div class="bg-inner text-center">
+                        <span class=" d-flex align-items-center justify-content-center radius-box1">
+                            <img src="{{asset('img/b1.png')}}" alt="b1.png">
+                            {{-- <i class="fa fa-handshake-o" aria-hidden="true"></i> --}}
+                        </span>
+                        <p class=""> <strong> BEST DEAL GUARANTEES</strong> </p>
+                        <p class="mt-4">We offer the best package at its lowest price possible within your budget.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-sm-0 mb-3 d-flex">
+                    <div class="bg-inner text-center">
+                        <span class=" d-flex align-items-center justify-content-center radius-box1">
+                            <img src="{{asset('img/b2.png')}}" alt="b2.png">
+                            {{-- <i class="fa fa-users" aria-hidden="true"></i> --}}
+                        </span>
+                        <p class=""> <strong> CUSTOMER SATISFACTION</strong> </p>
+                        <p class="mt-4">We deliver a top-notch service to ensure our customers are fully satisfied.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-sm-0 mb-3 d-flex">
+                    <div class="bg-inner text-center">
+                        <span class=" d-flex align-items-center justify-content-center radius-box1">
+                            <img src="{{asset('img/b3.png')}}" alt="b3.png">
+                            {{-- <i class="fa fa-money" aria-hidden="true"></i> --}}
+                        </span>
+                        <p class=""> <strong>  NO HIDDEN COST </strong></p>
+                        <p class="mt-4">we promise low prices and no any extra charges or hidden fees. We are crystal clear with our payment</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-sm-0 mb-3 d-flex">
+                    <div class="bg-inner text-center">
+                        <span class=" d-flex align-items-center justify-content-center radius-box1">
+                            <img src="{{asset('img/b3.png')}}" alt="b3.png">
+                            
+                            {{-- <i class="fa fa-money" aria-hidden="true"></i> --}}
+                        </span>
+                        <p class=""> <strong>HASSLE FREE HOLIDAY PLANNING</strong> </p>
+                        <p class="mt-4">We understand our customers and always deliver on our promises. And we don't stop at just offering customized packages.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+</section>
 @endsection
 @section('js')
 @endsection

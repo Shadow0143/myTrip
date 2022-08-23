@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{{ asset('css/menu.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/custom-animation.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/new/style.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}" />
     @laravelPWA
     @yield('css')
