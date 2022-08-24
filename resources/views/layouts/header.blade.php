@@ -14,6 +14,10 @@ $setting = DB::select('SELECT * FROM settings');
                     <div class="contact-info">
                         <ul>
                             <li><i class="flaticon-flash"></i> Contact us on: +91-9830243235</li>
+                            <li> &nbsp;</li>
+                            <li> &nbsp;</li>
+                            <li> &nbsp;</li>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i>Email :<a href="mailto:reservation@ecoadventureresorts.net"> Reservation@ecoadventureresorts.net</a> </li>
                         </ul>
                     </div>
                 </div>

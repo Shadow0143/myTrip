@@ -132,6 +132,16 @@
         function closeNav1() {
             document.getElementById("mySidenav1").style.width = "0";
         }
+
+        $('.banner_slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 200,
+            slidesToShow: 1,
+            adaptiveHeight: true,
+            autoplay: true
+        });
+        
         $('.packages_slider').slick({
             dots: true,
             infinite: true,

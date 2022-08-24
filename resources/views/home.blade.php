@@ -58,7 +58,26 @@
     </div>
 </div> --}}
 
-<section class="slider-wrapper p-0 homebaner01">
+<section class="banner_wrap">
+    <div class="banner_slider">
+        @foreach ($bannerall as $bk => $banner)
+        @php $active = ($bk==0) ? 'active' : ''; @endphp
+        <div class="banner_item">
+            <figure>
+                {{-- <img src="{{ asset('images/banner1.jpg') }}" alt=""> --}}
+                <img src="banner/{{ $banner->banner_image }} " alt="banner_images" class="slide-image" />
+            </figure>
+            <div class="banner_content">
+                <h3>{!! html_entity_decode($banner->title) !!}</h3>
+                <p>{!! html_entity_decode($banner->sub_title) !!}</p>
+                <a href="{{ url('/about-us') }}" class="btn-theme">Read more</a>
+            </div>
+        </div>
+        @endforeach
+    </div>
+</section>
+
+{{-- <section class="slider-wrapper p-0 homebaner01">
     <div id="slider-style-one" class="carousel slide bs-slider control-round indicators-line" data-ride="carousel"
         data-pause="hover" data-interval="5000">
         <ol class="carousel-indicators">
@@ -100,7 +119,9 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-</section>
+</section> --}}
+
+
 <section class="welcome-section">
     <div class="container">
         <div class="row">
