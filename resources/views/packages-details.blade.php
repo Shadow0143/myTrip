@@ -247,6 +247,8 @@
         </div>
     </div>
 </section>
+
+
 <section class="padd000 similarsection45">
     <div class="container">
         <div class="similar_content88">
@@ -286,6 +288,8 @@
         </div>
     </div>
 </section>
+
+
 {{-- <section class="testimonials-section">
     <div class="container">
         <div class="row">

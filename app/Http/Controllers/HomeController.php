@@ -17,7 +17,7 @@ class HomeController extends Controller
     public function index() {
         $bannerall = Banner::where('status', '1')->get();
         $bannercontain = BannerContain::where('status',1)->get();
-        $similarPackages = DB::table('packages')->where('status','Active')->take(6)->get();
+        $similarPackages = DB::table('packages')->where('status','Active')->take(6)->orderBy('id','desc')->get();
         $teaTourismPackages = DB::table('packages')->where('categoryId','37')->where('status','Active')->take(2)->get();
         $domesticTourismPackages = DB::table('packages')->where('categoryId','35')->where('status','Active')->take(9)->get();
         $internationalTourismPackages = DB::table('packages')->where('categoryId','38')->where('status','Active')->take(9)->get();
@@ -46,6 +46,7 @@ class HomeController extends Controller
         if($request->slug != 'book-stay-darjeeling-tea-bunglow'){
         $key = $request->slug;
         $packages = DB::table('packages')->where('status','Active')->where('slug',$key)->get();
+        // dd($packages);
         $testimonial= testimonial::orderBy('sequence', 'ASC')->where('status','Active')->get();
         $data = [];
         foreach($packages as $pac){
@@ -67,6 +68,7 @@ class HomeController extends Controller
             array_push($data, $pac);
         }
         $array = json_decode(json_encode($data), true);
+
         return view('packages-details')->with('data',$array)->with('testimonial',$testimonial)->with('similarPackages',$similarPackages)
         ->with('similarPackages',$similarPackages);
     }else{
